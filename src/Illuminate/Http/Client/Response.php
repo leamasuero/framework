@@ -157,7 +157,7 @@ class Response implements ArrayAccess
      */
     public function ok()
     {
-        return $this->status() === 200;
+        return $this->status() === 200 || $this->status() === 201;
     }
 
     /**
